@@ -14,7 +14,11 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@test-nx/edo": ["libs/edo/src/index.ts"],
+      "@test-nx/tokens": ["libs/tokens/src/index.ts"],
+      "@test-nx/edo/tokens": ["libs/edo/tokens/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

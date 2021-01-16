@@ -17,6 +17,9 @@
   },
   "projects": {
     "test": { "tags": [] },
-    "test-e2e": { "tags": [], "implicitDependencies": ["test"] }
+    "test-e2e": { "tags": [], "implicitDependencies": ["test"] },
+    "edo": { "tags": [] },
+    "tokens": { "tags": [] },
+    "edo-tokens": { "tags": [] }
   }
 }

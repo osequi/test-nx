@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from '@emotion/styled';
+import { TypographicGrid } from '@test-nx/edo';
 
 const StyledPage = styled.div`
   .page {
@@ -14,6 +15,7 @@ export function Index() {
    */
   return (
     <StyledPage>
+      <TypographicGrid />
       <h2>Resources &amp; Tools</h2>
       <p>Thank you for using and showing some ♥ for Nx.</p>
       <div className="flex github-star-container">

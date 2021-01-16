@@ -85,6 +85,81 @@
           }
         }
       }
+    },
+    "edo": {
+      "root": "libs/edo",
+      "sourceRoot": "libs/edo/src",
+      "projectType": "library",
+      "targets": {
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/edo/**/*.{ts,tsx,js,jsx}"
+            ]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": [
+            "coverage/libs/edo"
+          ],
+          "options": {
+            "jestConfig": "libs/edo/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "tokens": {
+      "root": "libs/tokens",
+      "sourceRoot": "libs/tokens/src",
+      "projectType": "library",
+      "targets": {
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/tokens/**/*.{ts,tsx,js,jsx}"
+            ]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": [
+            "coverage/libs/tokens"
+          ],
+          "options": {
+            "jestConfig": "libs/tokens/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "edo-tokens": {
+      "root": "libs/edo/tokens",
+      "sourceRoot": "libs/edo/tokens/src",
+      "projectType": "library",
+      "targets": {
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/edo/tokens/**/*.{ts,tsx,js,jsx}"
+            ]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": [
+            "coverage/libs/edo/tokens"
+          ],
+          "options": {
+            "jestConfig": "libs/edo/tokens/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
     }
   },
   "cli": {
